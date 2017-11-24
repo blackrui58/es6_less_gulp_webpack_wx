@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var p1 = new Promise(function(resolve, reject){
+				setTimeout(()=>{
+					resolve('成功了1');
+				}, 1000);
+
+			});
+			var p2 = new Promise(function(resolve, reject){
+				setTimeout(()=>{
+					resolve('成功了2');
+					reject('失败了2');
+				}, 2000);
+			});
+			
+			var p3 = new Promise(function(resolve, reject){
+				setTimeout(()=>{
+					resolve('成功了3');
+				}, 2000);
+			});
+			
+			var p = Promise.all([p1,p2,p3]);
+			p.then(function(v){
+				console.log(v);
+			}).catch(function(err){
+				console.log(err);
+			});
+			
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var p1 = new Promise(function(resolve, reject){
+				console.log('我做了一系列的操作');
+				
+				aaa(); //程序员不可预测的失败
+				resolve('成功了');
+				
+
+				
+			});
+			
+			
+			p1.then(function(v){
+				console.log(v);
+			}).catch(function(err){
+				console.log(err);
+			});
+		</script>
+	</body>
+</html>
