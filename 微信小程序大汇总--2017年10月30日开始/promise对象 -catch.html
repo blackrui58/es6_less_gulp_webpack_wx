@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>promise对象</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		var pro = new Promise(function(resolve,reject){
+			console.log('随便一个输出对象')
+			var aaa = 'jiahui'
+			// aaa()
+			resolve('guo成功了')
+		})
+
+		pro.then(function(s){
+			aaa()
+			console.log('成功'+s)
+		},function(s){
+			console.log('失败失败失败的干活')
+		})
+
+		
+
+		// .catch(function(){
+		// 	console.log('后面捕获错误')
+		// })
+	</script>
+</body>
+</html>

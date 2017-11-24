@@ -1,0 +1,21 @@
+
+ <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper> 
+
+<!-- <swiper>
+  <swiper-item>
+    <image src="/images/teacher1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/teacher2.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/teacher4.jpg"></image>
+  </swiper-item>
+</swiper> -->

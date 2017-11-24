@@ -1,0 +1,57 @@
+
+.indexBox {
+  width:100%;
+  background-color: #f9f9f9;
+}
+.in-theaters {
+  width:100%;
+  margin-top:34rpx;
+  background-color: #fff;
+}
+.theater-title {
+  width:100%;
+  height:52rpx;
+  font-size: 32rpx;
+  color:#7f7f7f;
+  box-sizing: border-box;
+  padding:0 8rpx;
+}
+.theater-image {
+  width:100%;
+   /* height:264rpx;  */
+  /* display: flex; */
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-bottom: 30rpx;
+  /* background-color: red; */
+}
+.theater-image2 {
+  display: inline-block;
+  width:200rpx;
+  /* height:212rpx; */
+  /* background-color:#008842; */
+  
+  
+  /* display: flex; */
+   justify-content: center; 
+   align-items: center; 
+   
+    margin-left:32rpx;
+}
+.theater-image3 {
+  width:200rpx;
+  height:278rpx;
+  /* background-color: yellow; */
+}
+.theater-title2 {
+  width:100%;
+  height:28rpx;
+  /* background-color: orange; */
+  font-size: 24rpx;
+  line-height: 28rpx;
+  color:#333;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

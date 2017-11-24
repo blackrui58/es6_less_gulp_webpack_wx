@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//asign  -- 浅拷贝
+			var obj = {
+				a:1,
+				b:{
+					uname:'guo'
+				}
+			}
+			
+			let objcopy =  Object.assign({},obj);
+			console.log(objcopy)
+			
+			objcopy.a = 4;
+			console.log(obj)
+			console.log(objcopy)
+			
+			objcopy.b.uname = 'jiahui'
+			
+			console.log(obj)
+			console.log(objcopy)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

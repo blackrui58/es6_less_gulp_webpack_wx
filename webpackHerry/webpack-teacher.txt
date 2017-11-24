@@ -1,0 +1,62 @@
+安装:
+npm install -g webpack
+npm init -y
+npm install webpack -D
+
+
+## 什么是模块化?
+
+## 常见的模块化的规范?
+- CommonJS: 同步 nodejs module.export , require
+- AMD : 异步: 经典框架: RequireJS:  define()
+- CMD : 异步: 经典框架: SeaJS.
+- es6 模块化规范:  import export 
+
+
+## 2015年以来最流行模块化工具: webpack 
+
+css-loader
+style-loader
+html-webpack-plugin
+
+//下面两个没有练习
+json-loader
+npm install --save-dev babel-loader babel-core babel-preset-es2015
+
+//url-loader和file-loader只需要用一个,都是对文件,尤其图片进行处理的
+file-loader
+url-loader
+url-loader 功能类似于 file-loader，但是在文件大小（单位 byte）低于指定的限制时，可以返回一个 DataURL。
+
+配置扩展:
+resolve:{
+		extensions:['.js','.css','.json'],//默认的扩展名设置,被写入这里的扩展名,有该扩展名的文件当引入时,可以只写名称,不用写扩展名
+
+		alias:{			
+			"@" : __dirname + '/src/',
+		}
+		//对于引入文件中的一些常用的路径问题,可以给其设置一些别名,用这些别名来代替路径--从而方便程序员的操作
+}
+
+
+
+//全局安装webpack-dev-server
+//全局安装时为了在控制台中可以使用其指令
+npm install -g webpack-dev-server
+
+//局部安装webpack-dev-server
+//局部安装是为了在文件中调用其功能
+npm install -D webpack-dev-server
+
+__dirname  //是node中自带的表示根目录的表示方法
+
+
+
+在命令行运行
+webpack:::运行webpack.config.js文件里面的内容
+webpack-dev-server::::打开服务器,并且运行webpack.config.js文件里面的内容
+dev-server:::打开服务器,
+
+
+
+//因为bbb.html是由模板template1.html生成的,但在template1.html中的图片的地址引用上,不能相对于template1.html进行路径设置//因为就最终的显示效果来说,显示的是bbb.html文件,所以虽然是在template1.html中进行图片路径的配置,但显示的时候是bbb.html文件中图片路径的显示,//所以路径配置上应该相对于bbb.html进行路径配置

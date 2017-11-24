@@ -1,0 +1,39 @@
+/* pages/myself/myself.wxss */
+.one{
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userinfo {
+  display: flex;
+  justify-content: flex-start;
+}
+.uname{
+  display:flex;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+navigator{
+  padding:8px;
+  padding-bottom:5px;
+  display:flex;
+  justify-content: flex-start;
+  border-bottom:1px solid #ccc;
+}
+navigator image{
+  width:25px;
+  height:25px;
+  margin-right:10px;
+}
+navigator text{
+  font-size:14px;
+}

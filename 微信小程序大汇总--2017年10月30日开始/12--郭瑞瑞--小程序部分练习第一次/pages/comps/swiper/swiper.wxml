@@ -1,0 +1,27 @@
+<!--swiper中的配置选项是对整个 [滑块视图] 的配置  -->
+<!--而swiper-item 是对每张图片的设置  -->
+
+<!--indicator-dots::	是否显示面板指示点  -->
+<!-- autoplay:::是否自动播放 -->
+<!--interval:::自动切换时间间隔  -->
+<!--duration:::滑动动画时长  -->
+<!-- circular:::是否无缝轮播 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 点击切换是否显示 面板指示点 -->
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<!--点击切换是否自动播放  -->
+<button bindtap="changeAutoplay"> autoplay </button>
+
+<!-- 通过滑动条设置::::自动切换时间间隔 -->
+<!--在slider组件中,bindchange事件::表示:: 完成一次拖动后触发的事件 -->
+<!-- show-value::是否显示当前 value  -->
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<!-- 通过滑动条设置::::滑动动画时长 -->
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration

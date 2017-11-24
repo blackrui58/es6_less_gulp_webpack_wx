@@ -1,0 +1,14 @@
+.slide-image{
+  width: 750rpx;
+  height: 1334rpx;
+}
+.swip{
+  width: 750rpx;
+  height: 1334rpx; 
+}
+
+.into{
+  position: absolute;
+  bottom: 20rpx;
+  margin-left: 280rpx;
+}

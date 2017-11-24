@@ -1,0 +1,22 @@
+<view class="indexBox">
+    <swiper style="width:100%;height:380rpx;" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{activeColor}}" autoplay circular indicator-dots="true" indicator-color="{{indicatorColor}}">
+      <block wx:for="{{all_info[1].movies}}">
+          <swiper-item>
+              <image bindtap='skipDetail' id='{{item.id}}' src="{{item.images.small}}" style="width:100%"></image>
+          </swiper-item>
+      </block>
+  </swiper>
+
+  <view class="in-theaters" wx:for="{{all_info}}" wx:for-item="movies_info">
+      <view class="theater-title" data-requrl='{{movies_info.requestUrl}}' bindtap='sikpList'>{{movies_info.title}}</view>
+      <scroll-view class="theater-image" scroll-x>
+          <view  wx:for="{{movies_info.movies}}" class="theater-image2">
+             <image  bindtap='skipDetail' id='{{item.id}}' wx:if="{{item.images.small}}" class="theater-image3" src="{{item.images.small}}"></image>
+            <view  bindtap='skipDetail' id='{{item.id}}' wx:if="{{item.title}}" class="theater-title2">{{item.title}}</view> 
+            <image  bindtap='skipDetail' id='{{item.subject.id}}' wx:if="{{item.subject.title}}" class="theater-image3" src="{{item.subject.images.small}}"></image>
+            <view  bindtap='skipDetail' id='{{item.subject.id}}'  wx:if="{{item.subject.title}}" class="theater-title2">{{item.subject.title}}</view>
+          </view>
+          
+      </scroll-view>
+  </view>
+</view>

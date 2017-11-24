@@ -1,0 +1,16 @@
+.first{
+	background: #ccc;
+	font-size: 20px;
+	background: url(../images/1.jpg);
+}
+.second{
+	vertical-align: middle;
+	background: url(../images/20140825082917_LaGy4.thumb.224_0.jpg);
+}
+.three{
+	vertical-align: middle;
+	background: url(../images/20161215110546236.jpg);
+}
+.four{
+	background: url(../images/goodactive.png);
+}

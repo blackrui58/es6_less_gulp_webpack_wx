@@ -1,0 +1,9 @@
+<!--pages/three/three.wxml-->
+<text>pages/three/three.wxml</text>
+<view class='three' bindtap="click">
+  disangeyemian
+</view>
+
+<view style="width:100px;height:{{height}}px;background:#0000ff">
+  disangeyemian
+</view>

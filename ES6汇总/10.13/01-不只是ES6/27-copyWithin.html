@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			console.log([1, 2, 3, 4, 5].copyWithin(-2)); //
+//			
+//			console.log([1, 2, 3, 4, 5].copyWithin(0, 3)); // 从第0个开始粘贴， 从第3个开始复制。 复制到最后一个
+//
+			let arr = ["a", "b", "c"];
+
+			let obj  = {
+				uname:'aaa',
+				age: 20,
+				sex: '男'
+			};
+
+//			let iterator = arr.keys();  //key  键  value 值
+//			
+			
+			for(var valName of arr.entries() ){
+				console.log(valName);
+			}
+			
+//			0: "a"
+//			1: "b"
+//			2: "c"
+//			console.log(iterator);
+//			// Array Iterator {}
+//			
+//			console.log(iterator.next()); 
+//			// Object {value: 0, done: false}
+//			
+//			console.log(iterator.next()); 
+//			// Object {value: 1, done: false}
+//			
+//			console.log(iterator.next()); 
+//			// Object {value: 2, done: false}
+//			
+//			console.log(iterator.next()); 
+//			// Object {value: undefined, done: true}
+			
+			var total = [0, 1, 2, 3].reduce(function(sum, value) {
+			  return sum + value ;  //sum =2； value ：0  \\  sum：0 ,value :1 , sum:1,value:2, sum:3
+			}, 2);
+			// total is 6
+
+			
+		</script>
+	</body>
+</html>

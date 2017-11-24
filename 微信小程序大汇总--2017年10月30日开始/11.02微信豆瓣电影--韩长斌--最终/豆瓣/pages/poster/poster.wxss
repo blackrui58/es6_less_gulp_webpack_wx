@@ -1,0 +1,22 @@
+/* pages/poster/poster.wxss */
+.posterbox {
+  width:100%;
+  position: relative;
+}
+.posteritem {
+  width: 100%;
+  
+}
+.posterimg {
+  width:100%;
+  
+}
+.experience {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  margin-left: -150rpx;
+  width:300rpx;
+  font-size: 32rpx;
+  opacity: 0.5;
+}

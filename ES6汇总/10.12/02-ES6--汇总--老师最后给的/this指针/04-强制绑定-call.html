@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//强制绑定this： call， apply， bind。 
+			function fn1(a,b,c){
+				console.log("我非常美，大家都在觊觎我。都想调用我。 现在是");
+				console.log(this);
+				console.log(this.objName);
+				console.log(a+b+c);
+				console.log("在调用我");
+			}
+			
+			var obj1 = {
+				objName: "obj1"
+			};
+			//fn1();
+			//fn1.call(obj1); 
+			fn1.call(obj1, 1 , 2, 3);
+			
+			//注意如果call和apply的第一个参数写的是null，那么this指向的是window对象
+			
+		</script>
+	</body>
+</html>

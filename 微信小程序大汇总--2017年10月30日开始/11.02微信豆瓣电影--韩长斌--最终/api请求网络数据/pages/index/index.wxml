@@ -1,0 +1,9 @@
+<view>
+  <swiper wx:for="{{movies}}">
+    <block>
+      <swiper-item>
+          <image src="{{item}}"><image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

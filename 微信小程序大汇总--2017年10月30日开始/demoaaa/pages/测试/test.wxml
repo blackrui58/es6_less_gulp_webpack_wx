@@ -1,0 +1,30 @@
+
+<!--筛选条件布局-->
+<view class = "filter">
+    <!--智能排序-->
+    <view class = "span {{filters.sort}}" bindtap = "fliterSort" data-sort = "sort" >
+    <!--子元素也必须加data-sort才能连接到事件上-->
+    <image src="../../images/Category{{filters.sort}}.png" data-sort = "sort"></image>
+    智能排序
+    </view>
+     <!--好评率-->
+    <view class = "span {{filters.good}}" bindtap = "fliterSort" data-sort = "good">
+    <image src="../../images/good{{filters.good}}.png" data-sort = "good"></image>
+    好评率
+    </view>
+     <!--学科-->
+    <view class = "span {{filters.data}}" bindtap = "fliterSort" data-sort = "data">
+    <image src="../../images/data{{filters.data}}.png" data-sort = "data"></image>
+    学科
+    </view>
+     <!--颜值-->
+    <view class = "span {{filters.smile}}" bindtap = "fliterSort" data-sort = "smile">
+    <image src="../../images/Smile{{filters.smile}}.png" data-sort = "Smile"></image>
+    颜值
+    </view>
+</view>
+
+<view wx:for = "{{arr}}" data-tid = "{{item.id}}" wx:key = "{{index}}" bindtap='clickTeacher'>
+  {{item.name}} 
+
+</view>

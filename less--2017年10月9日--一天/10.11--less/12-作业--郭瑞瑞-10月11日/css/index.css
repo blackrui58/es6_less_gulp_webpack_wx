@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.bold,
+.middle .up h3,
+.bottom .left span {
+  font-weight: bold;
+}
+.red {
+  color: #fff;
+}
+.body {
+  width: 1100px;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 100px auto;
+}
+.body:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.box {
+  width: 263px;
+  height: 380px;
+  background: #ffffff;
+  float: left;
+  margin-right: 12.66666667px;
+  position: relative;
+}
+.box:nth-child(4) {
+  margin-right: 0;
+}
+.top {
+  height: 275px;
+  overflow: hidden;
+  position: relative;
+}
+.top img {
+  margin-top: 20px;
+  display: block;
+  width: 240px;
+  height: 240px;
+  margin-left: 11.5px;
+}
+.top .tig {
+  margin-left: 10px;
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid #ff0000;
+  padding: 4px 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff0000;
+}
+.middle {
+  margin-left: 10px;
+}
+.middle .up {
+  width: 235px;
+}
+.middle .up h3 {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.middle .up h3 span {
+  color: #ff0000;
+}
+.middle .up p {
+  font-size: 13px;
+  line-height: 21px;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #535353;
+}
+.middle .down .icon {
+  float: left;
+  width: 80px;
+  height: 10px;
+  border: 2px solid #F0B9BA;
+  border-radius: 10px;
+}
+.middle .down .icon:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.middle .down .icon .l {
+  float: left;
+  width: 70px;
+  height: 10px;
+  background: #FFC7B7;
+}
+.middle .down .icon .r {
+  float: right;
+  width: 10px;
+  height: 10px;
+}
+.middle .down span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff0000;
+  vertical-align: top;
+  margin-left: 10px;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 263px;
+  height: 40px;
+  background: #ff0000;
+}
+.bottom:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.bottom .left {
+  float: left;
+  margin-left: 9px;
+}
+.bottom .left strong {
+  font-size: 15px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.bottom .left span {
+  font-size: 19px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.bottom .right {
+  float: right;
+  width: 90px;
+  height: 38px;
+  background: #fff;
+  margin: 1px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 13px;
+  line-height: 38px;
+  color: #ff0000;
+}

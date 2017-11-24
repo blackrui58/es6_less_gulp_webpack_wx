@@ -1,0 +1,11 @@
+<swiper   interval="2000" duration="500"  class="swip" bindchange="bindchange">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<button class='into' wx:if="{{currentIndex == 2}}" bindtap='clickGo'>
+  进入APP
+</button>
+

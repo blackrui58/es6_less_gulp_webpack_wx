@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			//v: 12, i:0,a: arr
+			
+			var arr  = [{
+				usname: 'aaa',
+				age:10
+			},{
+				usname: 'bas',
+				age:10
+			},
+			{
+				usname: 'ccc',
+				age:10
+			},
+			{
+				usname: '张三',
+				age:10
+			}
+			];
+			
+			var filterArr = arr.filter(function(v, i, a){
+				return v.usname.includes('张');
+			});
+			
+			console.log(filterArr);
+			
+			let numbers = [1, 5, 10, 15];
+			let doubles = numbers.some((v) => {
+			   return v > 5;
+			});
+			console.log(doubles);
+		</script>
+	</body>
+</html>

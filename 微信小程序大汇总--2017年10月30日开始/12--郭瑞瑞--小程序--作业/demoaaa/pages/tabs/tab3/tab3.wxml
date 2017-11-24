@@ -1,0 +1,25 @@
+<!--pages/tabs/tab3/tab3.wxml-->
+<text>pages/tabs/tab3/tab3.wxml</text>
+<button size='mini' type='primary'>第一个按钮</button>
+<button  type='warn' bindtap='toFriend'>跳转到朋友界面</button>
+
+<checkbox-group>
+  多选框部分
+  <checkbox>1</checkbox>
+  <checkbox>2</checkbox>
+  <checkbox>3</checkbox>
+  <checkbox>4</checkbox>
+</checkbox-group>
+
+输入框部分
+<input value='jiahui222' disabled='true'>shurukuang</input>
+
+picher部分
+<picker></picker>
+
+视频部分
+<video src='http://www.iqiyi.com/v_19rre0egrs.html' controls="true" autoplay="true">
+</video>
+<!-- <audio id='audiofirst' >
+
+</audio> -->

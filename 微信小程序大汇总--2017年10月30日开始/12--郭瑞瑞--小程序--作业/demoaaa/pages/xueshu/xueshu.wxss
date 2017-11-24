@@ -1,0 +1,12 @@
+/* pages/xueshu/xueshu.wxss */
+
+.head image{
+  width: 80px;
+  height: 80px;
+}
+
+
+.arrimage image{
+  width: 100px;
+  height: 100px;
+}

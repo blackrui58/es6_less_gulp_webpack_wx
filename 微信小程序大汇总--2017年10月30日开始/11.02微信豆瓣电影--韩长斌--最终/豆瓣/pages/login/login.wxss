@@ -1,0 +1,49 @@
+/* pages/login/login.wxss */
+.login{
+  padding:10px;
+}
+.userinfo {
+  display: flex;
+  justify-content: flex-start;
+}
+.uname{
+  display:flex;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.inp{
+  padding:10px 15px;
+  border-bottom:1px solid #ccc;
+}
+.inp image{
+  float:left;
+  width:20px;
+  height:20px;
+}
+.inp input{
+  padding-left:8px;
+  font-size:14px;
+}
+
+.inp:last-child{
+  border:none;
+}
+.foot{
+  width:100%;
+  height:45px;
+  background:#f00;
+  margin-top:30px;
+  color:#fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:5px;
+}

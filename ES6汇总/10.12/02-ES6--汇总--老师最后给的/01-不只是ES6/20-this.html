@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+//			function abc(){
+//				console.log(this);
+//			}
+//			
+//			abc();
+
+//			setTimeout(function(){
+//				console.log(this)
+//			},3000);
+
+
+			var obj = {
+				usname:"aaa",
+				eat:function(){
+					console.log(this);
+					console.log(this.username);
+				}
+			};
+			
+			var obj2 = obj.eat;
+			window.obj2();
+			
+			
+//			var obj3 = {};
+//			console.log(obj3.a);
+			
+			
+			
+		</script>
+	</body>
+</html>

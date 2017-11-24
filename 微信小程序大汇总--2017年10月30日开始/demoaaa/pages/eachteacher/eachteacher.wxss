@@ -1,0 +1,53 @@
+/* pages/eachteacher/eachteacher.wxss */
+.clear:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.teacher{
+	background:#ff0000;
+	color:#ffffff;
+}
+.teacher image{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	margin-left:140px;
+}
+.teacher .name{
+	text-align:center;
+}
+.teacher .evaluate{
+	padding:10px;
+	font-size:16px;
+}
+
+.pingjia{
+	padding:10px;
+	border-bottom:1px solid #aaa;
+	
+}
+.pingjia .wangname{
+	float:left;
+	font-size:16px;
+}
+.pingjia .date{
+	float:right;
+	font-size:16px;
+}
+.pingjia .content{
+	float:right;
+}
+
+
+
+.listen{
+	background:#ff0000;
+	width:100%;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	position:fixed;
+	bottom:0;
+	color:#ffffff;
+}

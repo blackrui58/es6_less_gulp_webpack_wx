@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/index/index",
+    "pages/xueshu/xueshu",
+    
+    "pages/yuyue/yuyue",
+    "pages/teacher/teacher",
+    "pages/eachteacher/eachteacher",
+    "pages/three/three",
+    "pages/tabs/tab3/tab3",
+    "pages/tabs/tab1/tab1",
+    "pages/tabs/tab2/tab2",
+    "pages/friend/friend",
+    "pages/测试/test"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#000000",
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/tabs/tab1/tab1",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabs/tab2/tab2",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/tabs/tab3/tab3",
+        "text": "我"
+      }
+    ]
+  }
+}

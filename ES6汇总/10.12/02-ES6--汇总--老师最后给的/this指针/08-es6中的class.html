@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			class Bar {
+				 constructor(name){
+				 	this.name = "Aaa";
+				 	
+				 }
+				 doStuff() {
+				  	console.log(this);
+				    console.log(this.name);
+				 }
+				  
+				 otherFunc(){//Bar.prototype.OtherFunc = function(){}
+				  	this.doStuff();
+				 }
+			}
+			
+			var b = new Bar();
+			//b.doStuff() // "Aaa"	
+			b.otherFunc();
+			
+		</script>
+	</body>
+</html>

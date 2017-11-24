@@ -1,0 +1,84 @@
+@body_width:2200px/2;
+@body_bgcolor:#eee;
+@body_padding:10px/2;
+
+@box_width:526px/2;
+@box_height:760px/2;
+@box_bgcolor:#fff;
+
+@img_width:360px/1.5;
+@img_height:360px/1.5;
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+//清浮动
+.clear{
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	
+}
+
+//设置超出段落的以三点...隐藏
+.over-hiden(){
+	white-space: nowrap; 
+	overflow: hidden;   
+    text-overflow:ellipsis;  
+}
+
+//设置文字的大小,行高,颜色
+.text(@font-size:12px,@line-height:16,@color:#000){
+	font-size: @font-size;
+	line-height: @line-height;
+	color: @color;
+}
+
+
+//设置元素的宽高
+.size(@width,@height){
+	width: @width;
+	height: @height;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+
+// .sanjiao(@_,@size:6px,@color:red){
+// 	width: 0px;
+// 	height: 0px;
+// 	border-top: @size solid transparent; 
+// 	border-left: @size solid transparent; 	
+// 	border-right: @size solid transparent; 	
+// 	border-bottom: @size solid transparent; 
+// }
+
+// .sanjiao(left,@size: 6px, @color: red ){
+// 	border-right:@size solid @color
+// }
+// .sanjiao(right,@size: 6px, @color: red ){
+// 	border-right:@size solid @color
+// }
+// /*
+// .main1{
+// 	.sanjiao(right,100px,yellow)
+// }
+
+.float-left(@_){
+	
+}
+.float-left(left){
+	float: left;
+}
+.float-left(right){
+	float: right;
+}
+
+
+

@@ -1,0 +1,6 @@
+/* pages/tabs/tab2/tab2.wxss */
+.nav{
+  background: #ff0000;
+  color: #ffffff;
+  font-size: 50px;
+}

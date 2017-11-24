@@ -1,0 +1,37 @@
+<!-- <view>
+  <view wx:for="{{moviesData}}">
+    <view bindtap='toDetail' data-tid="{{item.id}}">
+      <view>
+        <image src='{{item.images.small}}'></image>
+      </view>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+</view> -->
+
+
+<view class="searchbox" style="height:{{height}}px">
+
+  <view class="moviesintro" wx:for="{{moviesData}}" bindtap='toDetail' data-tid="{{item.id}}">
+  
+          <view class="content1"><image class="seaimages" src="{{item.images.small}}"></image></view>
+          <view class="content2">
+          <view class="year">{{item.title}}</view>
+            <view class="pingfen">
+                <view class="title">年份：{{item.year}}</view>
+                <view class="pingfen2">评分：{{item.rating.average}}</view>
+            </view>
+          
+            <view class="catorbox">导演:<text wx:for="{{item.directors}}"  class="cator">{{item.name}}</text>
+            </view> 
+            <view class="catorbox">主演：<text wx:for="{{item.casts}}" wx:for-item="casts" class="cator">{{casts.name}}</text>
+            </view>
+            <view class="catorbox">类型：<text wx:for="{{item.genres}}" class="cator">{{item}}</text>
+            </view>
+          </view>
+      
+    
+    </view>
+
+  <view class="loading" wx:if="{{isBottom}}">已加载全部</view>
+</view>

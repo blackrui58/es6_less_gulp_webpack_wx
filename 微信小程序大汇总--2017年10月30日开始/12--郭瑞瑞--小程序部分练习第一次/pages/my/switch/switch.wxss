@@ -1,0 +1,8 @@
+/* pages/my/switch/switch.wxss */
+.s{
+  color:#ff0000;
+}
+
+.w{
+  color:#0000ff;
+}

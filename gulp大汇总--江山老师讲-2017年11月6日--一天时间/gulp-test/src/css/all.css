@@ -1,0 +1,31 @@
+body {
+	color: red;
+	font-size: 200px;
+}
+
+.main {
+	background: red;
+	width: 100px;
+	background: url(../images/spritesheet.png);
+	background-position: -0px -0px;
+}
+
+.main ul {
+	list-style: none;
+	background: url(../images/spritesheet.png);
+	background-position: -200px -0px;
+}
+
+.main2 {
+	background: red;
+	width: 100px;
+	background: url(../images/spritesheet.png);
+	background-position: -0px -200px;
+}
+
+.main3 {
+	background: red;
+	width: 100px;
+	background: url(../images/spritesheet.png);
+	background-position: -200px -200px;
+}

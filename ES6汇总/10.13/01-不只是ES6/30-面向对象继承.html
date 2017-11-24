@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			class Person {
+				constructor(sname, sex){
+					this.sname = sname; 
+					this.sex = sex; 
+				}
+				
+				eat(){
+					console.log(this.sname + "在康康吃");
+				}
+			}
+			
+			
+			class Student extends Person{
+					constructor(sname, sex, snumber){
+						super(sname, sex);
+						this.snumber = snumber;
+					}
+					
+					study(){
+						console.log(this.sname + "康康学");
+					}
+					
+					eat(){
+						
+					}
+			}
+			
+			var stu1 = new Student("aaa",'nan','001');
+			stu1.study();
+			stu1.eat();
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+//			function Student(sname, age){
+//				this.sname = sname;
+//				this.age = age; 
+//			}
+//			
+//			Student.prototype.getInfo = function(){
+//				console.log(`姓名是${this.sname}, 年龄是${this.age}`);
+//			}
+//			
+//			__proto__
+		
+			//语法糖
+			
+			
+			class Student{
+				constructor(sname, age){
+					this.sname = sname;
+					this.age = age; 
+				}
+				
+				//默认方法就是挂在ProtoType 原型对象上
+				getInfo(){
+					console.log(`姓名是${this.sname}, 年龄是${this.age}`);
+				}
+			}
+			
+			var stu1 = new Student('aaa',20);
+			
+			var stu2 = new Student('aaa',22);
+			
+			var stu3 = new Student('aaa',23);
+			
+			stu1.getInfo();
+		</script>
+	</body>
+</html>

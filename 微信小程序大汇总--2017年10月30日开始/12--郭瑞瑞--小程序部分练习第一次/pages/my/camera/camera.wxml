@@ -1,0 +1,11 @@
+<!--camera   系统相机-->
+<!--
+两个属性:
+device-position	String	默认值:back	前置或后置，值为front, back
+flash	String	:默认值:auto	闪光灯，值为auto, on, off
+
+两个事件:
+bindstop	EventHandle		摄像头在非正常终止时触发，如退出后台等情况
+binderror	EventHandle		用户不允许使用摄像头时触发
+  -->
+  <camera>照相机</camera>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var obj = {
+				objName: "aaa",
+				fn1 : function(){
+					console.log(this);
+//					console.log(this.objName);
+				}
+			};
+		
+			obj.fn1(); //此时this等于obj对象，并不是因为fn1的定义位置，而是因为执行时， obj调用了fn1 。 在JavaScript中，this是基于运行时的，而不是基于定义位置。 
+			
+			var b = obj.fn1 ; //this是基于运行时的，谁调用this就是谁。
+			b();
+		</script>
+	</body>
+</html>

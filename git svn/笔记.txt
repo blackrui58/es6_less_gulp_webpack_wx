@@ -1,0 +1,275 @@
+﻿码云: 代码的托管平台  (注册)
+官网: https://gitee.com/
+名称写英文的,最好记住
+注册完之后,邮箱激活
+
+SVN: 集中式的代码管理工具
+
+把所有人的代码都提交到服务器,并且也可以从服务器下载文件  (FTP)
+
+服务器:
+	1.买一个服务器
+	2.通过第三方(码云)
+项目 == 仓库 == 文件夹
+码云操作:
+	1.必须登录
+	2.右上角+
+	3.选择新建项目 (仓库)
+	4.名称
+	5.公开
+	6.创建
+	7.readme --> 编辑
+	8.关联SVN
+		a.项目最右边--> 管理
+		b.启用SVN访问 -- > 保存
+		c.回到项目
+		d.右边 --> 克隆 下载
+		e.SVN链接复制: svn://gitee.com/yhhua/class74
+					   svn://gitee.com/个性名称/项目名称
+
+SVN: tortoise svn
+安装成功: 右击桌面,显示SVN checkout 和 tortoise svn
+步骤:
+1.在本地新建文件夹
+2.在文件夹里面右击
+3.选择SVN checkout (只是第一次使用)
+4.填写仓库的URL地址 (码云里面的SVN地址)
+5.OK --> 输入账号密码 (第一次使用)
+
+上传文件:
+1.右击文件夹
+2.先更新(为了防止在此过程中有人往项目里面提交了文件,你需要也下载下来),再提交 (commit)
+2.先update,再commit
+3.可能第一次提交也需要账号密码
+
+
+快速查看在码云里面的项目,克隆下载-->https-->网页链接打开即可
+
+
+确认git安装成功: 一路回车  右击桌面 显示 git bash git gui
+
+SVN: 集中式的代码管理工具
+git: 分布式的代码管理工具
+
+SVN缺点:
+1.回家后,不好工作 (只有在公司才能访问公司的服务器)
+2.上传文件的速度太慢了
+
+git: 上传和下载
+
+git仓库
+
+git下载: git
+
+cmd: windows命令:
+	dir: 查看所有文件
+使用git,得使用Linux命令: mac (终端)
+cd: 切换目录
+ls: 查看所有文件 -l: 显示一些详细信息
+mkdir 文件夹名称: 新建文件夹
+touch 文件名称: 创建文件
+echo 写入的内容 >> 文件名称
+rm 文件名称: 删除文件
+clear: 清空界面
+ipconfig: ip地址
+右击文件夹-->git bash
+
+1.git init: 创建一个git仓库 (在一个文件夹里面创建一次即可)
+2.git status: 查看git仓库里面此时的一个文件状态
+3.git add 文件名: 将文件夹里面的文件加入到缓冲区
+4.git commit -m "提交的解释说明" 提交到了git仓库里面
+
+5.git checkout 文件名: 从仓库里面下载某个文件
+
+6.git log: 信息
+
+git的三个区域:
+工作区: 本地文件夹
+缓冲区: 执行了add 命令以后的文件
+仓库
+
+git 和 github: 雷锋与雷峰塔
+github: 也是一个代码托管平台  https://github.com/
+----------------------------------------------------
+
+二、玩git流程：
+	
+github：
+	git开放服务器！
+
+	官网：https://github.com/
+
+
+准备工作：
+
+	1.准备俩个邮箱：
+	头像 --> settings --> 添加一个邮箱
+	网易邮箱账户：github666@163.com
+	网易邮箱账户：github777@163.com
+
+
+	2.在git网页上，登录、注册---》为的就是-邮箱验证
+
+
+    3.邮箱验证
+
+    	点击右上角的头像--》点击settings---》在左侧导航点击emails---》可以添加一个副邮箱，其次点击send（发送）---》登录网易邮箱然后验证！
+
+    4.真正准备工作！
+
+    	1.在本地生成一个秘钥
+    		ssh-keygen -t rsa -C  '登录的邮箱地址'
+
+    		直接一直回车---》生成秘钥了！
+
+    		从哪里找秘钥：
+    			/c/Users/Administrator/.ssh
+
+    				id_rsa     私有秘钥
+    				id_rsa.pub 公有秘钥
+
+    				打开这个id_rsa.pub文件，注意不要用编辑器打开，要用记事本打开！
+
+
+        2. 把秘钥放在github（绑定）
+
+        	找到放秘钥的位置？
+
+        	点击左上角头像---》点击settings----》SSH and GPG keys ---》New SSH key（会出来一个界面！）
+
+        	title 随意 英文
+        	key:要把所得的秘钥复制粘贴上去！
+
+        3.配置一下到底是哪一个！（告诉git仓库我现在当前的使用权归谁！）
+
+        怎么来配置（怎么来告诉它）？
+
+        	a》 git config --global user.email "邮箱名"
+        	邮箱名是注册的邮箱
+        	b》git config --global user.name "自己起的名字"
+        	名字(头像下面第一行 as 后面的内容)
+        	注册时候的名字
+
+        怎么来查看此时配置的文件？
+
+        	git config -l
+
+ ================================================     
+  4.两种模式：
+
+ 		1.本地代码放在github里面
+ 			第一次：
+ 				和github建立关系！
+
+
+		首先新建一个项目：
+
+			点击头像旁边的加号--》New repository
+
+			填写项目名称
+			填写描述
+
+			选择public（默认就是）
+
+			点击最后的按钮：Create repository
+
+			----》新建项目完毕！
+
+		得到一个项目：
+		项目地址：https://github.com/yhhmhs/renrenche.git
+
+	链接创建：
+		在本地文件里面 git bash 出现命令行界面：
+		输入命令：
+		echo 文件内容 > 文件名
+		echo "# welcom" >> README.md  (在本地项目新建说明文档)
+		git init （把本地变成git的）
+		git add README.md  （要添加的的东西README.md ）
+		git commit -m "first commit"（添加说明）
+
+
+		git remote add origin https://github.com/yhhmhs/renrenche.git（要添加到那个仓库地址）
+
+		git push -u origin master
+
+		---输完以上命令：
+			弹出账户密码：分别输入即可！
+
+			-----新项目成功！
+
+	2.添加代码资源，还有就是上传！
+
+		写页面
+
+		写完上传：
+
+			git status（看一下本地目录是否有些的页面）
+
+			添加一个文件到缓存区:
+				git add 文件名
+			添加所有的文件到缓存区:
+				git add .
+
+			真正开始
+				git add .    添加所有文件！
+
+				git commit -m "描述信息"
+
+				git push
+
+				----（输入账户密码）！
+
+-----------------------------------------------------
+    3.从github中的项目，下载到本地！
+
+复制项目地址：https://github.com/githun666/xiaomi.git
+
+	在你想放项目的文件里面
+
+	点击鼠标右键 点击git bash
+
+	输入：git clone "项目地址"
+
+	需要在你的项目文件中拉去新的资源
+		git pull(先更新)
+
+		创建修改（再修改）
+		git add .
+
+		git commit -m ""
+
+		git push
+
+如果想要别人看到你写的项目,可以给他一个链接,步骤如下:
+1.点击项目里面的settings
+2.在source里面选择master branch -->save
+3.在页面的GitHub Pages会有以下内容:
+	 Your site is published at https://yhhmhs.github.io/renrenche/
+4.直接将网址复制到地址栏就可以观看了,这个网址默认为显示的是项目里面的index.html文件
+https://yhhmhs.github.io/renrenche/index.html
+如果想看该项目里面的其他的页面
+https://yhhmhs.github.io/renrenche/ 相当于github里面的项目的路径
+
+---------------------------------------------
+github个人博客:
+https://yhhmhs.github.io
+
+https://名字.github.io
+
+1.新建仓库
+2.Repository name: 名字.github.io
+3.Initialize this repository with a README 勾上
+4.create
+5.创建的个人博客的项目里面settings
+6.choose a theme 给你的博客选择一个主题
+7.select theme
+8.commit changes
+9.readme里面显示的内容就是你选择主题的内容
+10.如果不想用github给你提供的博客模板(删除_config.yml这个文件),可以自己去网上下载
+11.删除_config.yml: 点击此文件,跳转新页面,删除图标,commit change
+
+模板地址:
+	http://sc.chinaz.com/tag_moban/BoKe.html
+
+简书: 可以将自己的笔记放到简书里面去,手机下简书app,就可以看笔记了;  也可以放置一些个人心得在里面; 可以分享
+写文章--->发布

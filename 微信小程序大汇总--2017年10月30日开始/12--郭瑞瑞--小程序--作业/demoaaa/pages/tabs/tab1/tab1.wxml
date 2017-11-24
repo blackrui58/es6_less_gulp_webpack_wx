@@ -1,0 +1,5 @@
+<!--pages/tabs/tab1/tab1.wxml-->
+<text>pages/tabs/tab1/tab1.wxml</text>
+<view class='btn' bindtap='btnclick'>
+  按钮
+</view>

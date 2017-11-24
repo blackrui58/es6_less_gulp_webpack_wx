@@ -1,0 +1,27 @@
+<view class="searchbox" style="height:{{height}}px">
+  <view class="search-input">
+    <image calss="searchimg" style="width:30px;height:30px;" src="../../images/search1.png"></image>
+    <input bindchange="changInput" value='{{value}}' placeholder="请输入搜索信息" class="seainput"></input>
+    <button class="seabtn" bindtap="searchMoviesEvent">搜索</button>
+  </view>
+  <view class="searchcontent" wx:if="{{isShow}}">暂无此搜索信息</view>
+  <view class="moviesintro" wx:if="{{!isShow}}" bindtap="skipdetail" wx:for="{{searchArr}}" id="{{item.id}}" >
+    <view class="content1"><image class="seaimages" src="{{item.images.small}}"></image></view>
+    <view class="content2">
+     <view class="year">{{item.title}}</view>
+      <view class="pingfen">
+          <view class="title">年份：{{item.year}}</view>
+          <view class="pingfen2">评分：{{item.rating.average}}</view>
+      </view>
+     
+      <view class="catorbox">导演:<text wx:for="{{item.directors}}"  class="cator">{{item.name}}</text>
+       </view> 
+      <view class="catorbox">主演：<text wx:for="{{item.casts}}" wx:for-item="casts" class="cator">{{casts.name}}</text>
+      </view>
+      <view class="catorbox">类型：<text wx:for="{{item.genres}}" class="cator">{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="loading" wx:if="{{nowloading}}">正在加载......</view>
+  <view class="loading" wx:if="{{finishload}}">已加载全部</view>
+</view>

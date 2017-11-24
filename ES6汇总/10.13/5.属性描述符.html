@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var arr = [3,34,93,23];
+			var obj = {
+				a:4,
+				b:'rui',
+				c:function(){
+					
+				},
+				d:{
+					'user':'na'
+				}
+			}
+			
+			//configurable:true
+			//enumerable:true
+			//value:5
+			//writable:true
+//			Object.defineProperty(obj,'a',{
+//				value:123,
+//			})
+
+			Object.defineProperty(obj,'a',{
+//				value:123,
+				writable:false,
+				configurable:true,
+			})
+			obj.a = 5;
+			console.log(obj)
+
+			console.log(Object.getOwnPropertyDescriptor(obj,'a'))
+			console.log(obj)
+			Object.defineProperty(obj,'a',{
+//				value:123,
+				writable:false,
+				configurable:false,
+			})
+			delete obj.a;
+			console.log(obj)
+			
+			Object.defineProperty(obj,'b',{
+//				value:123,
+				writable:false,
+				configurable:false,
+				enumerable:true,
+			})
+			
+			for(var i of obj){
+				console.log(i)
+			}
+//			for(var i of obj)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

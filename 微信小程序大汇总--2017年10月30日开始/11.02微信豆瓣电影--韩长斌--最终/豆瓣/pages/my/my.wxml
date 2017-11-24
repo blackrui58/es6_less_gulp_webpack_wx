@@ -1,0 +1,21 @@
+<view class="container">
+  <template is="head" data="{{title: 'Login'}}"/>
+
+  <view class="page-body">
+    <view class="page-section">
+      <block wx:if="{{hasLogin === true}}">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <button class="page-body-button" type="primary" bindtap="clear">退出登录</button>
+      </block>
+      <block wx:if="{{hasLogin === false}}">
+        <image class="userinfo-avatar" src="../../images/0000.gif"></image>
+        <text class="page-body-text">请用微信帐号登录体验</text>
+        <button class="page-body-button" type="primary" bindtap="login">微信登录</button>
+      </block>
+    </view>
+  </view>
+  <view wx:if="{{hasLogin === true}}">
+      
+  </view>
+</view>

@@ -1,0 +1,5 @@
+/* pages/comps/picker/picker.wxss */
+
+.section{
+  margin: 40px;
+}

@@ -1,0 +1,16 @@
+<view class="detailbox" style="width:100%;height:{{height}}px;">
+    <view class='bgackimg'><image src='{{movieSbuject.images.large}}'></image></view>
+    <view style='width:100%;'>
+        <view class="movie-image1">
+            <image class="movie-image2" src="{{movieSbuject.images.large}}"></image>
+        </view>
+        <view class="detailstitle">{{movieSbuject.title}}</view>
+        <view class="actor">评分{{movieSbuject.rating.average}}</view>
+        <view class="actor">导演:<text  wx:for="{{movieSbuject.directors}}"wx:for-item="directors">{{directors.name}} </text></view>
+         <view class="actor">主演:<text wx:for="{{movieSbuject.casts}}" wx:for-item="casts">{{casts.name}} </text></view> 
+        <!--没做完  -->
+    </view>
+    <view class='abstract'>摘要</view>
+    <rich-text type="text" class="intro">{{movieSbuject.summary}}</rich-text>
+    
+</view>

@@ -1,0 +1,105 @@
+/* pages/more/more.wxss */
+/* pages/search/search.wxss */
+.searchbox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.search-input {
+  width:100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  /* padding: 0 15px; */
+}
+.seainput {
+  flex: 4;
+  height: 32px;
+  margin-right: 10px;
+  border:1px solid #ccc;
+  font-size: 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.seabtn {
+  flex: 1;
+  font-size: 14px;
+}
+.searchcontent {
+  width:100%;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  
+}
+.moviesintro {
+  box-sizing: border-box;
+  padding: 10px 0 ;
+  width:100%;
+  display: flex;
+   font-size: 12px;
+   border: 1px solid #ccc;
+}
+.content1 {
+  flex: 1;
+}
+.seaimages {
+  width:100px;
+  height:139px;
+}
+.content2 {
+  flex: 2;
+   justify-content: center; 
+   align-items: center; 
+  box-sizing: border-box;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+   text-overflow: ellipsis; 
+}
+.pingfen {
+  /* border: 1px solid #ccc; */
+  /* margin-top: 10px; */
+  color: #444;
+  width: 100%;
+  height: 26px;
+
+  line-height: 26px; 
+   margin-bottom: 35px;
+}
+.catorbox {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+   text-overflow: ellipsis; 
+}
+.cator {
+  margin: 0 5px;
+  color: #444;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+.year {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  
+  
+  font-size: 16px;
+  font-weight: bold;
+}
+.loading {
+  width:100%;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

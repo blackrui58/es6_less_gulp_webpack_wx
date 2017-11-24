@@ -1,0 +1,14 @@
+/* pages/shouye/shouye.wxss */
+.imgpp{
+  white-space: nowrap;
+  width: 100%;
+}
+ .imgp{
+  width: 90px;
+  height: 120px;
+  display: inline-block
+}
+.img{
+  width: 70px;
+  height: 100px;
+} 

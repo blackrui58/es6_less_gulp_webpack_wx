@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			"use strict"
+
+			 
+//			 var obj = {
+//			 	uname: 'aaa',
+//			 	age:20,
+//			 	sex: '男',
+//			 	birth:'1990'
+//			 };
+//			 
+//			 
+//			 var d = Object.getOwnPropertyDescriptor(obj,'uname');
+//			 console.log(d);
+//			 if(d.writable){
+//			 	obj.uname = "bbb";
+//			 }
+//			console.log(obj);
+//			 Object.defineProperties(obj, {
+//			 	'birth': {
+//				 	enumerable: false
+//				 },
+//				 'sex':{
+//				 	enumerable: false
+//				 }
+//			 	});
+//			
+////			delete obj.birth;
+////			console.log(obj);
+//			
+//			for (var v of Object.keys(obj)){
+//				console.log(v);
+//			}
+			
+			
+			//obj.sex = 'nv';
+			
+//			var arr = ["a", "b", "c"];
+//			console.log(Object.getOwnPropertyNames(arr));
+//			
+
+
+
+			var obj = { 
+				a: 1 ,
+				b:{
+					c:3
+				}
+			};
+//			var obj2 = {b:2};
+			var copy = Object.assign({}, obj);
+			
+			//obj.a = 2;
+			
+			obj.b.c = 4; 
+			console.log(copy);
+			
+//				console.log(copy); // { a: 1 , b:2}
+
+//			var a = [1]; 
+//			var b = a; 
+//			a.push(2); 
+//			console.log(b);
+			
+			
+			
+		
+		</script>
+	</body>
+</html>

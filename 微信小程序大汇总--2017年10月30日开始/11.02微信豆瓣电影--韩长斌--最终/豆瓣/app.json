@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/poster/poster",
+    "pages/login/login",
+    "pages/myself/myself",
+    "pages/index/index",
+    "pages/more/more",
+    "pages/my/my",
+    "pages/search/search",
+    
+    
+    
+    "pages/details/details",
+    
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle":"#ccc"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "榜单",
+        "iconPath": "images/list1.png",
+        "selectedIconPath": "images/list2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜素",
+        "iconPath": "images/search1.png",
+        "selectedIconPath": "images/search2.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png"
+      }
+    ]
+  }
+}

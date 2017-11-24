@@ -1,0 +1,30 @@
+<!--pages/yuyue/yuyue.wxml-->
+
+<view class='head'>
+  <image src='/images/teacher.png'></image>
+</view>
+
+
+
+<form class='body'>
+  <view class='place cont'>
+    <image src='/images/map.png'></image>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{pickerView}}">
+      <view class="picker">
+        {{pickerView[index]}}
+      </view>
+    </picker>
+    
+  </view>
+  <view class='name cont'>
+    <image src='/images/name.png'></image>
+    <input placeholder='请输入用户名'></input>
+  </view>
+  <view class='phone cont'>
+    <image src='/images/phone.png'></image>
+    <input type='number' placeholder='请输入手机号'></input>
+  </view>
+
+  <button type='warn' bindtap="send">确认发送</button>
+</form>
+

@@ -1,0 +1,72 @@
+<!--value::输入框的初始内容  -->
+<!--要想获取输入框的内容::需要在事件对象中获取 即:::evt.detail.value  -->
+
+
+<!--type::input 的类型:::
+
+text	文本输入键盘
+number	数字输入键盘
+idcard	身份证输入键盘
+digit	带小数点的数字键盘
+
+这里和html中的type类型还不一样::指的是当点击该输入框是手机键盘应该弹出来的键盘的类型
+
+而如果想设置html中的type类型,通过直接设置属性来设置
+  -->
+
+  <!--password:: 	是否是密码类型 -->
+  <!--placeholder:::输入框为空时占位符:::其相关样式设置属性:::placeholder-style:::placeholder-class  -->
+
+  <!--disabled:::是否禁用  -->
+
+  <!--maxlength:::最大输入长度，设置为 -1 的时候不限制最大长度  -->
+  <!--focus:::	获取焦点  -->
+  <!--confirm-type::设置键盘右下角按钮的文字
+  
+  send	右下角按钮为“发送”
+  search	右下角按钮为“搜索”
+  next	右下角按钮为“下一个”
+  go	右下角按钮为“前往”
+  done	右下角按钮为“完成”
+    -->
+
+    <!--总共有四个相关事件
+bindinput	EventHandle		当键盘输入时，触发input事件，
+bindfocus	EventHandle		输入框聚焦时触发，	
+bindblur	EventHandle		输入框失去焦点时触发，	
+bindconfirm	EventHandle		点击完成按钮时触发，
+      -->
+<view class="section">
+  <input placeholder="这是一个可以自动聚焦的input" auto-focus/>
+</view>
+<view class="section">
+  <input placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+  </view>
+</view>
+<view class="section">
+  <input  maxlength="10" placeholder="最大输入长度10" />
+</view>
+<view class="section">
+  <view class="section__title">你输入的是：{{inputValue}}</view>
+  <input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+</view>
+<view class="section">
+  <input  bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" />
+</view>
+<view class="section">
+  <input password type="number" />
+</view>
+<view class="section">
+  <input password type="text" />
+</view>
+<view class="section">
+  <input type="digit" placeholder="带小数点的数字键盘"/>
+</view>
+<view class="section">
+  <input type="idcard" placeholder="身份证输入键盘" />
+</view>
+<view class="section">
+  <input placeholder-style="color:red" placeholder="占位符字体是红色的" />
+</view>

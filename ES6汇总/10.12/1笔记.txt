@@ -1,0 +1,85 @@
+- 什么是作用域？举几个例子？
+	- 在JS中，作用域一般指的是 {…} 中间的区域。
+	- 比如，if／else语句，switch语句，for语句，function等等。
+
+- 什么是块级作用域？
+	- 块级作用域是指带有封闭特性的作用域，在其中声明的变量不会被外部作用域访问到。
+- ReferenceError ： 找不到
+- TypeError： 做不了
+
+- 什么是声明提升?
+
+
+
+
+charAt, charCodeAt , concat, indexOf, lastIndexOf, localeCompare(*), match, replace, search, slice, split,  substr, substring, toLocaleLowerCase, toLocaleUpperCase, toLowerCase, toUpperCase, toString,  valueOf
+
+
+
+ES6中补充的部分
+
+##String补充
+
+- fromCharCode
+- fromCodePoint
+- endsWith
+- startWith
+- includes
+- trim
+
+##Math
+- cbrt
+- fround
+- hypot
+- imul
+- 各种log
+- 各种正弦余弦 ，双曲正弦余弦
+- pow
+- sign
+- trunc
+
+##Number
+- isFinite()
+- isInteger()
+- isNaN()
+- isSafeInteger()
+- parseInt --- 前缀字母NaN, 后缀字母可以
+- toExponential
+
+
+
+
+##Array
+- 其他类型转换成数组： from
+- 数组转换为字符串： join
+- 判断是否为数组： isArray
+- 枚举： entries， forEach、keys、values
+- 筛选判断真假（v,i,a）： every、some
+- 筛选返回结果数组(v,i,a)： filter 、map 
+- 复制粘贴： copyWithin
+- 数组操作： fill、join、pop、push、reduce、reduceRight、reverse、shift、slice、sort、splice、unshift
+- 数组查找： find、findIndex、includes、indexOf、lastIndexOf
+- 如何去重一个数组？
+
+
+
+##Object
+- 对象的简洁写法。 
+- 对象操作（设置）:assign，create， freeze，defineProperty， defineProperties，preventExtensions
+- 对象操作（获取）： getOwnPropertyDescriptor()，getOwnPropertyDescriptors()，getOwnPropertyNames，getOwnPropertySymbols()，getPrototypeOf，
+- 遍历： entries，keys,values
+- 判断： hasOwnProperty ，propertyIsEnumerable，is，isExtensible，isFrozen，isSealed，
+
+
+## 属性描述符： 
+
+- value
+    - 该属性的值
+- writable
+    - 当且仅当属性的值可以被重新赋值时为true。
+- configurable
+    - 当且仅当指定对象的属性描述可以被改变或者属性可被删除时，为true。
+- enumerable： 是否可枚举。 
+
+
+

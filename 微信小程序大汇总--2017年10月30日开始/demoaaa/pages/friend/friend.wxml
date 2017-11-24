@@ -1,0 +1,9 @@
+<!--pages/friend/friend.wxml-->
+<text>pages/friend/friend.wxml</text>
+<view>这是朋友界面</view>
+<text>我的第一个朋友</text>
+<text>第二个朋友</text>
+<text>我的第三个朋友</text>
+<text>我的第4444个朋友</text>
+<button bindtap='toNormal'>看看是否能跳转到普通页</button>
+<button bindtap='toBeauti'>看看是否能跳转到首页</button>

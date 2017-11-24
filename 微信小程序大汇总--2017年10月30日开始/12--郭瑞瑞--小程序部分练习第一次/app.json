@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/comps/video/video",
+    "pages/my/switch/switch",
+    "pages/my/progress/progress",
+    "pages/my/camera/camera",
+    "pages/my/icon/icon",
+    "pages/my/image/image",
+    "pages/comps/input/input",
+    "pages/comps/swiper/swiper",
+    "pages/comps/picker/picker"    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

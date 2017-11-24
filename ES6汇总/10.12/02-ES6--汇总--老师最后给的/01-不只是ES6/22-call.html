@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fn1(objName, a,b){
+				this.objName = objName;
+				console.log("我非常美，大家都在觊觎我。都想调用我。现在是")
+				console.log(this.objName);
+				console.log(this);
+				console.log(a+b);
+				console.log("在调用我");
+			}
+			
+			//var aaa = new fn1("aaa");
+			
+			
+			var obj  = {
+				objName: "putong"
+			};
+			
+//			fn1.call(obj,"putong", 1, 2 );
+//			fn1.apply(obj, ["putong", 1, 2]);
+			
+			
+			fn1.bind(obj, 1, 2)();
+		</script>
+	</body>
+</html>

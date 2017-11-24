@@ -1,0 +1,20 @@
+
+<input value="123" type="text"></input>
+
+<input value="number类型" type="number" placeholder></input>
+<input value="身份证类型" type="idcard"></input>
+<input value="两位小数点" type="digit"></input>
+
+<input value="123" type="text" password></input>
+<input value="number类型" type="number" password></input>
+
+
+<input  type="text" placeholder="请输入身份证号"></input>
+
+<input  type="text" placeholder="聚焦相关" focus></input>
+<input  type="text" placeholder="聚焦相关" focus confirm-type="send"></input>
+<input  type="text" placeholder="聚焦相关" focus confirm-type="search"></input>
+<input  type="text" placeholder="聚焦相关" focus confirm-type="next"></input>
+<input  type="text" placeholder="聚焦相关" focus confirm-type="go"></input>
+<input  type="text" placeholder="聚焦相关" focus confirm-type="done" bindfocus="bindfocus"></input>
+<input  type="text" placeholder="聚焦相关" focus confirm-type="go"></input>

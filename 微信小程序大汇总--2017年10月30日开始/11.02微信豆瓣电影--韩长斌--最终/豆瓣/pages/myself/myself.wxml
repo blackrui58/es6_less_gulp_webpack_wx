@@ -1,0 +1,34 @@
+<!--pages/myself/myself.wxml-->
+
+<view class="one">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap='click'></image>
+      <view class="uname">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+    </block>
+  </view>
+  <navigator>
+    <image src='../../images/讨论.png'></image>
+    <text>我的评论</text>
+  </navigator>
+  <navigator>
+    <image src='../../images/离线缓存.png'></image>
+    <text>我的缓存</text>
+  </navigator>
+  
+  <navigator>
+    <image src='../../images/设置.png'></image>
+    <text>我的设置</text>
+  </navigator>
+  <navigator>
+    <image src='../../images/收藏.png'></image>
+    <text>我的收藏</text>
+  </navigator>
+  <navigator>
+    <image src='../../images/历史记录.png'></image>
+    <text>历史记录</text>
+  </navigator>
+</view>

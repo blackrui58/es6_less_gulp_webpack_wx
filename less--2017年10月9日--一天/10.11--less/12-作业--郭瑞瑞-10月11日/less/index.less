@@ -1,0 +1,143 @@
+//
+@import url('libs.less');
+.red{
+	color:#fff;
+}
+
+
+.body{
+	.clear();
+	width: @body_width;
+	background: @body_bgcolor;
+	box-sizing:border-box;
+	padding: @body_padding;
+	// display: flex;
+	// justify-content:space-between;
+	margin:100px auto;
+	
+
+}
+
+.box{
+		.size(@box_width,@box_height);
+		background: @box_bgcolor;
+		float: left;
+		margin-right: (@body_width - (@body_padding * 2) - (@box_width*4))/3;
+
+		&:nth-child(4){
+			margin-right: 0;
+		}
+		position: relative;
+		
+}
+
+.top{
+	height: 550px/2;
+	overflow: hidden;
+	position: relative;
+
+	img{
+		margin-top: 20px;
+		display: block;
+		.size(@img_width,@img_height);
+		margin-left: (@box_width - @img_width)/2
+	}
+
+	.tig{
+		margin-left: 20px/2;
+		position: absolute;
+		bottom: 10px;
+		border: 1px solid #ff0000;
+		padding: 4px 10px;
+		.text(12px,14px,#ff0000)
+	}
+}
+
+
+
+.middle{
+	margin-left: 20px/2;
+	.up{
+		width: 470px/2;
+		h3{
+			.text(28px/2,38px/2,#000);		
+			.over-hiden();
+			
+			&:extend(.bold);
+			// font-weight: bold;	
+
+			span{
+				color: #ff0000;
+			};
+			 
+
+		}
+
+		p{
+			.text(26px/2,42px/2,#000);		
+			.over-hiden();
+
+			color:#535353;
+		}
+	}
+	
+	.down{
+		
+
+		.icon{
+			.float-left(left);
+			.size(160px/2,20px/2);
+			border: 2px solid #F0B9BA;
+			border-radius: 10px;
+			.clear();
+
+			.l{
+				.float-left(left);
+				.size(140px/2,20px/2);
+				background: #FFC7B7;
+			}
+			.r{
+				.float-left(right);
+				.size(20px/2,20px/2);
+			}
+		}
+
+		span{
+			.text(24px/2,14px,#ff0000);
+			vertical-align: top;
+			margin-left: 10px;
+
+		}
+	}
+}
+
+.bottom{
+	position: absolute;
+	bottom: 0;
+	.clear();
+	.size(@box_width,80px/2);
+	background: #ff0000;
+
+	.left{
+		.float-left(left);
+		margin-left: 18px/2;
+		strong{
+			.text(30px/2, 80px/2,#fff);
+		}
+		span{
+			.text(38px/2, 80px/2,#fff);
+			&:extend(.bold);
+		}
+	}
+	.right{
+		.float-left(right);
+		.size(180px/2,76px/2);
+		background: #fff;
+		margin: (80px/2 - 76px/2)/2;
+		overflow: hidden;
+		text-align: center;
+		.text(26px/2, 76px/2,#ff0000);
+
+	}
+
+}

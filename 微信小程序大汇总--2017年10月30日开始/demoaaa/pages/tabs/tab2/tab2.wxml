@@ -1,0 +1,3 @@
+<!--pages/tabs/tab2/tab2.wxml-->
+<text>pages/tabs/tab2/tab2.wxml</text>
+<navigator class='nav' url="/pages/tabs/tab3/tab3" open-type="switchTab">导航条</navigator>

@@ -1,0 +1,48 @@
+<!--pages/teacher/teacher.wxml-->
+<view class='header'>
+	<view class='headtab {{filter.zhineng}}' bindtap='fliterSort{{filter.zhineng}}' data-sort="zhineng" >
+		<image src='/images/Category{{filter.zhineng}}.png'></image>
+		<text>智能排序</text>
+	</view>
+	<view class='headtab {{filter.haoping}}' bindtap='fliterSort' data-sort="haoping" >
+		<image src='/images/good{{filter.haoping}}.png'></image>
+		<text>好评率</text>
+	</view>
+	<view class='headtab {{filter.xueke}}' bindtap='fliterSort' data-sort="xueke" >
+		<image src='/images/data{{filter.xueke}}.png'></image>
+		<text>学科</text>
+	</view>
+	<view class='headtab {{filter.yanzhi}}' bindtap='fliterSort' data-sort="yanzhi" >
+		<image src='/images/Smile{{filter.yanzhi}}.png'></image>
+		<text>颜值</text>
+	</view>
+</view>
+
+<!--老师列表-->
+
+<view class='body' wx:for="{{teachers}}">
+<!--自定义一个属性用来向后端传值,而不是往常的在事件函数中传值  -->
+  <view class='item' data-tid="{{item.id}}"  bindtap='getInfo'>
+      <view class='left' >
+        <image src='{{item.avatar}}'></image>
+      </view>
+      <view class='right' >
+        <view class='up clear'>
+          <view class='name'>{{index}}{{item.name}}</view>
+          <view class='good'>{{item.haoping}}%好评</view>
+        </view>
+        
+        <view class='evaluate'>
+          {{item.intro}}			
+        </view>
+      
+      </view>
+  </view>
+	
+	
+	
+</view>
+
+<view wx:if="{{isBottom}}">
+	已到达底部,正在继续加载信息
+</view>

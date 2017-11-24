@@ -1,0 +1,6 @@
+/* pages/three/three.wxss */
+.three{
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+}

@@ -1,0 +1,21 @@
+<!--pages/first/first.wxml-->
+<map class='map'  style='height:{{height}}px;'  longitude='116.277310' latitude='40.003050' scale='18' >
+
+</map>
+<view class='tab'>
+
+<!-- markers='{{markers}}' -->
+  <view class='tableft' bindtap='toTeacher'>
+    <image src='../../images/friends.png' class='tableftimg'></image>
+  </view>
+  <text class='tabcenter' bindtap='toxueshu'>AAA学术圈</text>
+  <view class='tabright'>
+      <text bindtap='toYuyue'>预约</text>
+  </view>
+
+
+</view>
+
+
+ 
+

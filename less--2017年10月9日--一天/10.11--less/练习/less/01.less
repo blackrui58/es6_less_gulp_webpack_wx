@@ -1,0 +1,184 @@
+// @main_color:white;
+// @main_width:1960px;
+// @main_sel:p;
+
+// body{
+// 	background:@main_color;
+// 	width:@main_width;
+// }
+// h1{
+// 	color:@main_color;
+// }
+// @{main_sel}{
+// 	width:@main_width;
+// }
+
+// .main(@a:888px,@b:66px){
+// 	width:@a;
+// 	height:@b;
+// }
+
+// .div{
+// 	.main;
+// }
+// .box{
+// 	width:20px;
+// }
+
+
+
+
+
+// .sanjiao(@_,@size:6px,@color:red){
+// 	width: 0px;
+// 	height: 0px;
+// 	border-top: @size solid transparent; 
+// 	border-left: @size solid transparent; 	
+// 	border-right: @size solid transparent; 	
+// 	border-bottom: @size solid transparent; 
+// }
+
+// .sanjiao(left,@size: 6px, @color: red ){
+// 	border-right:@size solid @color
+// }
+// .sanjiao(right,@size: 6px, @color: red ){
+// 	border-right:@size solid @color
+// }
+// /*
+// .main1{
+// 	.sanjiao(right,100px,yellow)
+// }
+// */
+// .sanjiao(@_,@size:6px,@color:red){
+// 	width: 0px;
+// 	height: 0px;
+// 	border-top: @size solid transparent; 
+// 	border-left: @size solid transparent; 	
+// 	border-right: @size solid transparent; 	
+// 	border-bottom: @size solid transparent; 
+// }
+// .sanjiao(left,@size:10px,@color:red){
+// 	border-left:@size,solid,@color;
+// }
+
+// .main{
+// 	.sanjiao(left)
+// }
+// .mixin(@i) when (@i > 0){
+// 	.mixin((@i - 1))
+// 	width: (@i * 10px);
+// }
+
+// div{
+// 	.mixin(5)
+// }
+
+.mixin(@counter) when (@counter > 0) {
+  .mixin((@counter - 1));    // 递归调用自身
+  width: (10px * @counter); // 每次调用时产生的样式代码
+}
+
+div {
+  .mixin(5); // 调用循环
+}
+
+.loop(@i) when(@i > 0){
+	.loop((@i - 1));
+	width: (10px * @i)
+}
+
+
+.guo(@i) when(@i > 0){
+	.guo((@i - 1));
+	&:nth-child(@{i}){
+		width: (@i * 10px)
+	}
+		
+	
+}
+
+.div1{
+	.div2{
+		.guo(5)
+	}
+}
+
+.jia(){
+	background+_: red;
+
+}
+
+div{
+	.jia();
+	background+_ : url(01.less)
+}
+
+.hui(){
+	box-shadow+: 1px 2px ;
+}
+h1{
+
+	box-shadow+:3px 4px;
+	.hui();
+	box-shadow+:5px 9px;
+	color: isnumber(34)
+}
+
+// .mixin (@a) when (lightness(@a) >= 50%) {
+//   background-color: black;
+// }
+// .mixin (@a) when (lightness(@a) < 50%) {
+//   background-color: white;
+// }
+// .mixin (@a) {
+//   color: @a;
+// }
+
+
+.normal{
+	margin:0;
+	padding: 0;
+};
+
+// h1{
+// 	&:extend(.normal);
+// };
+
+div .cl span{
+	&:extend(.normal);
+}
+// .div1{
+// 	.div2{
+// 		.loop(5)
+// 	}
+// }
+
+// a{
+// 	color:red;
+// 	&:hover{
+// 		color:green;
+// 	}
+// }
+
+
+// .button {
+//   &-ok {
+//     background-image: url("ok.png");
+//   }
+//   &-cancel {
+//     background-image: url("cancel.png");
+//   }
+
+//   &-custom {
+//     background-image: url("custom.png");
+//   }
+// }
+
+// .div{
+// 	&_1{
+// 		color: red;
+// 	}
+// 	&_a{
+// 		color:green;
+// 	}
+// }

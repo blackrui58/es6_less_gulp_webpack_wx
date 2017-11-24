@@ -1,0 +1,28 @@
+<!--pages/eachteacher/eachteacher.wxml-->
+<view class='teacher'>
+	<image src='{{teacher[0].avatar}}'></image>
+	<view class='name'>{{teacher[0].name}}</view>
+	<view class='evaluate'>
+	    {{teacher[0].intro}}
+	</view>
+</view>
+
+<view class='pingjia clear' wx:for="{{teacher[0].comments}}">
+	<view class="clear">
+		<view class='wangname'>
+			{{item.cname}}
+		</view>
+		<view class='date'>
+			{{item.updateTime}}
+		</view>
+	</view>
+	
+	<view class='content'>
+		{{item.content}}
+	</view>
+</view>
+
+<view class="listen" bindtap='toListen'>
+	预约听课
+</view>
+

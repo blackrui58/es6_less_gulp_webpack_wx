@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//via系列的(有filter,map,every,some)---(value,indxe,arr)
+			
+			//filter
+			//返回数组 ages 中所有元素都大于 18 的元素:
+			var ages = [32, 33, 16, 40];
+
+//			function checkAdult(age) {
+//			    return age >= 18;
+//			}
+//			
+//			 ages.filter(checkAdult);
+//			
+			//filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。
+			var stu = ages.filter(function(v,i,a){
+				//当v满足条件,即v>18时,输出
+				return i >= 2;
+			})
+			console.log(stu)
+			
+			
+			
+			
+			
+			
+			
+			//map
+			//map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
+//map() 方法按照原始数组元素顺序依次处理元素。
+
+			var arr = [2,45,'guo',9,'jia']
+			var arrmap = arr.map(function(v,i,arr){
+				return v*3;
+			})
+			console.log(arrmap)
+			
+			
+			
+			
+			//every
+			//every() 方法用于检测数组所有元素是否都符合指定条件（通过函数提供）。
+//every() 方法使用指定函数检测数组中的所有元素：
+//如果数组中检测到有一个元素不满足，则整个表达式返回 false ，且剩余的元素不会再进行检测。
+//如果所有元素都满足条件，则返回 true。
+//注意： every() 不会对空数组进行检测。
+//注意： every() 不会改变原始数组。
+		var arrevery = [2,4,54,39,28]
+		var every = arrevery.every(function(v){
+			return v>2;
+		})
+		console.log(every)
+		
+		////some
+		
+		//some() 方法用于检测数组中的元素是否满足指定条件（函数提供）。
+//some() 方法会依次执行数组的每个元素：
+//如果有一个元素满足条件，则表达式返回true , 剩余的元素不会再执行检测。
+//如果没有满足条件的元素，则返回false。
+//注意： some() 不会对空数组进行检测。
+//注意： some() 不会改变原始数组。
+	var some = arrevery.some(function(v){
+		return v>90;
+	})
+	console.log(some)
+	
+	
+	console.log([4,34,93,38].fill(2,0,2))
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

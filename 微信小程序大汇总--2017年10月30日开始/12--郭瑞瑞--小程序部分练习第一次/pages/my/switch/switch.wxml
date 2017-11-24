@@ -1,0 +1,24 @@
+<!--switch
+开关选择器。
+
+总共有3个属性
+
+checked	Boolean	false	是否选中
+type	String	switch	样式，有效值：switch, checkbox
+
+color	Color		switch 的颜色，同 css 的 color
+
+一个事件(在不同的组件中::bindchange的意义不一样)
+
+bindchange	EventHandle		checked 改变时触发 change 事件，event.detail={ value:checked}
+  -->
+
+<view class="body-view">
+    <switch checked bindchange="switch1Change"/>
+    <switch bindchange="switch2Change"/>
+    <switch type="checkbox" checked bindchange="switch1Change"/>
+    <switch type="checkbox" bindchange="switch2Change"/>
+
+    <switch checked bindchange="switch1Change" color="#ff0000" />
+    <switch bindchange="switch2Change" color="#0000ff"/>
+</view>

@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "电影排行榜",
+  "backgroundColor":"#ccc",
+  "enablePullDownRefresh":true
+}

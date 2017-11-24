@@ -1,0 +1,10 @@
+
+    <swiper class="posterbox" bindchange="cutimgEvent" style="height:{{height}}px">
+          <block wx:for="{{imgUrl}}">
+              <swiper-item>
+                  <image class="posterimg" style="height:{{height}}px" src="{{item.images.large}}"></image>
+              </swiper-item>
+          
+          </block>
+          <button wx:if="{{isshow}}" bindtap="skipIndex" class="experience">立即体验</button>
+    </swiper>
